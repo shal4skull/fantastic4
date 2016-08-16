@@ -1,5 +1,5 @@
 package datamanagement;
-
+//this is interface IStudent
 public interface IStudent {
 
     public Integer getID();
