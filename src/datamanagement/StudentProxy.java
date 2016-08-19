@@ -1,63 +1,48 @@
-package datamanagement;
-public class StudentProxy implements IStudent {
-private Integer I;
-private String l;
-
-
-
-    private String Il;
-    private StudentManager lI;
-    public StudentProxy( Integer id, String fn, String Il) {
-        this.I = id;
-        this.l = fn;
-
-        
-        this.Il = Il;
-this.lI = StudentManager.get();}
-
-    public Integer getID() { return I; 
-
-    
-    
-}
-public String getFirstName() { 
-        return l; }
-
-    public String getLastName() { 
-return Il; 
-}
-public void setFirstName(String firstName) {
-
-    
-    
-    
-    lI.getStudent(I).setFirstName(firstName);}
-    public void setLastName(String lastName) {
-        
-        
-        
-        lI.getStudent(I).setLastName(lastName);}
-
-    
-    
-        public void addUnitRecord(IStudentUnitRecord record) {
-        lI.getStudent(I).addUnitRecord(record);}
-        public IStudentUnitRecord getUnitRecord(String unitCode) {
-
-            
+/*
  
-            
-            
-            
-            
-            
-                    return lI.getStudent(I).getUnitRecord(unitCode);}
+ * Author: Khue Dinh
+ * Date: 17/8/2016
+ * Version: 1.0
+ * Moderator:
+ * Reader:
+ * Recorder:
+ * Inspector:
+ * 
+ */
+package datamanagement;
+public class StudentProxy implements IStudent 
+{
+	
+	private Integer id;
+	private String fn;
+	private String ln;
+    private StudentManager sm;
+    //this is a constructor of StudentProxy class
+    public StudentProxy( Integer id, String fn, String ln) 
+    {
+        this.id = id;
+        this.fn = fn;
+        this.ln = ln;
+        this.sm = StudentManager.get();
+    }
+    //this method returns student id
+    public Integer getID() { return id;}
+    //this method returns student first name
+    public String getFirstName() {return fn; }
+    //this method returns student last name
+    public String getLastName() { return ln;}
+    //this method sets student first name
+    public void setFirstName(String firstName) 
+    {sm.getStudent(id).setFirstName(firstName);}
+    //this method sets student last name
+    public void setLastName(String lastName) 
+    {sm.getStudent(id).setLastName(lastName);}
 
-
-        
-  
-        
-        
-        
-        
-                                public StudentUnitRecordList getUnitRecords() { return lI.getStudent(I).getUnitRecords();}}
+    //this method adds student unit records according to student id
+    public void addUnitRecord(IStudentUnitRecord record) {sm.getStudent(id).addUnitRecord(record);}
+    //this method gets student unit record according to student id
+    public IStudentUnitRecord getUnitRecord(String unitCode) {return sm.getStudent(id).getUnitRecord(unitCode);}
+    //this method gets student unit records according to student id
+    public StudentUnitRecordList getUnitRecords() { return sm.getStudent(id).getUnitRecords();}
+ 
+}
