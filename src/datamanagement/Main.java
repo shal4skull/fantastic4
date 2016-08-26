@@ -1,14 +1,13 @@
 /*
  
  * Author: Tsoi Wing Kui
- * Date: 20/8/2016
- * Version: 1.0
- * Moderator:
- * Reader:
- * Recorder:
- * Inspector:
-  
- */
+ * Date: 26/8/2016
+ * Version: 1.1
+ * Moderator: Khue Dinh
+ * Reader: Jayatunga siriwardana
+ * Inspector: Shaluka Heshan samarakoon Epitagedara
+ 
+*/
 
 package datamanagement;
 

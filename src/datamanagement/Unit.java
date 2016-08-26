@@ -1,14 +1,13 @@
 /*
  
  * Author: Tsoi Wing Kui
- * Date: 20/8/2016
- * Version: 1.0
- * Moderator:
- * Reader:
- * Recorder:
- * Inspector:
-  
- */
+ * Date: 26/8/2016
+ * Version: 1.1
+ * Moderator: Khue Dinh
+ * Reader: Jayatunga siriwardana
+ * Inspector: Shaluka Heshan samarakoon Epitagedara
+ 
+*/
 
 package datamanagement;
 
@@ -52,7 +51,7 @@ public class Unit implements IUnit {
 		return this.UN;
 	}
 
-	//Academic result operations.
+	//These are academic result operations.
 	public void setPsCutoff1(float cutoff) {
 		this.co2 = cutoff;
 	}
@@ -87,12 +86,12 @@ public class Unit implements IUnit {
 		return this.co5;
 	}
 
-	//Add a student record.
+	//Adds a student record.
 	public void addStudentRecord(IStudentUnitRecord record) {
 		rs.add(record);
 	}
 	
-	//Get a student record.
+	//Gets a student record.
 	public IStudentUnitRecord getStudentRecord(int studentID) {
 		for (IStudentUnitRecord r : rs) {
 			if (r.getStudentID() == studentID)return r;
@@ -105,7 +104,7 @@ public class Unit implements IUnit {
 		return rs;
 	}
 
-	//Assignment weight functions.
+	//These are assignment weight functions.
 	@Override
 	public int getAsg1Weight() {
 		return a1;
@@ -133,7 +132,7 @@ public class Unit implements IUnit {
 		this.ex = ex;			
 	}
 	
-	//Errors of calculating grades.
+	//These are error situations of calculating grades.
 	private void setCutoffs( float ps, float cr, float di, float hd, float ae) {
 		if (ps < 0 || ps > 100 ||
 			cr < 0 || cr > 100 ||

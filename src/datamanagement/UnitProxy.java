@@ -1,14 +1,13 @@
 /*
  
  * Author: Tsoi Wing Kui
- * Date: 20/8/2016
- * Version: 1.0
- * Moderator:
- * Reader:
- * Recorder:
- * Inspector:
-  
- */
+ * Date: 26/8/2016
+ * Version: 1.1
+ * Moderator: Khue Dinh
+ * Reader: Jayatunga siriwardana
+ * Inspector: Shaluka Heshan samarakoon Epitagedara
+ 
+*/
 
 package datamanagement;
 
@@ -19,7 +18,7 @@ public class UnitProxy implements IUnit {
 	private String un;
 	UnitManager   um;
 	
-	//Constructor.
+	//Creates a constructor.
 	public UnitProxy( String unitCode, String unitName ) {
 		this.UC = unitCode;
 		this.un = unitName;
@@ -36,7 +35,7 @@ public class UnitProxy implements IUnit {
 		return this.un; 
 	}
 	
-	//Academic result functions.
+	//These methods are academic result functions.
 	public void setPsCutoff1(float cutoff) {
 		um.getUnit(UC).setPsCutoff1(cutoff);
 	}
@@ -68,27 +67,27 @@ public class UnitProxy implements IUnit {
 		return um.getUnit(UC).getAeCutoff();
 	}
 	
-	//Get grade function.
+	//This is a get-grade function.
 	public String getGrade(float f1, float f2, float f3) {
 		return um.getUnit(UC).getGrade(f1, f2, f3);
 	}
 	
-	//Student record function.
+	//This is a student record function.
 	public void addStudentRecord(IStudentUnitRecord record) { 
 		um.getUnit(UC).addStudentRecord(record);
 	}
 	
-	//Student record report function.
+	//This is a student record report function.
 	public IStudentUnitRecord getStudentRecord(int s) {
 		return um.getUnit(UC).getStudentRecord(s);
 	}
 	
-	//Student record list function.
+	//This is a student record list function.
 	public StudentUnitRecordList listStudentRecords() {
 		return um.getUnit(UC).listStudentRecords();
 	}
 	
-	//Assignment and exam weight function.
+	//Theses are assignment and exam weight functions.
 	public int getAsg1Weight() {
 		return um.getUnit(UC).getAsg1Weight();
 	}
@@ -99,7 +98,7 @@ public class UnitProxy implements IUnit {
 		return um.getUnit(UC).getExamWeight();
 	}
 	
-	//Assignment and exam weight operation.
+	//This is an assignment and exam weight operation.
 	public void setAssessmentWeights(int asg1Wgt, int asg2Wgt, int examWgt) {
 		um.getUnit(UC).setAssessmentWeights(asg1Wgt, asg2Wgt, examWgt);
 	}

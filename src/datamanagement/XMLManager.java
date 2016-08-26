@@ -1,14 +1,13 @@
 /*
  
  * Author: Tsoi Wing Kui
- * Date: 20/8/2016
- * Version: 1.0
- * Moderator:
- * Reader:
- * Recorder:
- * Inspector:
-  
- */
+ * Date: 26/8/2016
+ * Version: 1.1
+ * Moderator: Khue Dinh
+ * Reader: Jayatunga siriwardana
+ * Inspector: Shaluka Heshan samarakoon Epitagedara
+ 
+*/
 
 package datamanagement;
 
@@ -20,7 +19,7 @@ import org.jdom.output.XMLOutputter;
 import java.io.IOException;
 import org.jdom.JDOMException;
 
-/*Class that handles all the operation of 
+/*Class that handles all the operations of 
 creating, editing and saving documents.*/
 public class XMLManager {
 	
@@ -34,15 +33,15 @@ public class XMLManager {
 		return self;
 	}
 		
-	//XMLManager function as a class constructor.
+	//This is XMLManager function as a class constructor.
 	private XMLManager() {
 		init();
 	}
 
-	//Method declaration for initiating a new file.
+	//This method declaration is for initiating a new file.
 	public void init() {
 		String s = AppProperties.getInstance().getProperties().getProperty("XMLFILE");
-		//Prevents program crush when exceptions (system error) occur.
+		//Prevents program crush when exceptions (system errors) occur.
 		try {
 			SAXBuilder b = new SAXBuilder();
 			b.setExpandEntities(true);
@@ -63,7 +62,7 @@ public class XMLManager {
 		return doc;
 	}
 
-	//Document saving function.
+	//This is saving document function.
 	public void saveDocument() {
 		String xmlfile = AppProperties.getInstance().getProperties().getProperty("XMLFILE");
 		//Saving file format.
