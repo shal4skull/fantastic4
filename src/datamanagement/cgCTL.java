@@ -1,3 +1,18 @@
+/*
+ 
+ * Author: jayatunga Siriwardana
+ * Date: 21/8/2016
+ * Version: 
+ * Moderator:
+ * Reader:
+ * Recorder:
+ * Inspector:
+ * 
+ */
+
+
+
+
 package datamanagement;
 
 public class cgCTL {
@@ -28,11 +43,11 @@ public class cgCTL {
 	}
 
 	public void unitSelected(String code) {
-
+		//if code equal NONE set state2 to false
 		if (code.equals("NONE"))
 			CGUI.setState2(false);
 		else {
-			ListStudentsCTL lsCTL = new ListStudentsCTL();
+			ListStudentsCTL lsCTL = new ListStudentsCTL(); //create ListStudentsCTL object
 			lsCTL.listStudents(CGUI, code);
 			cuc = code;
 			CGUI.setState2(true);
@@ -41,8 +56,8 @@ public class cgCTL {
 	}
 
 	public void studentSelected(Integer id) {
-		currentStudentID = id;
-		if (currentStudentID.intValue() == 0) {
+		currentStudentID = id; //assign id value to currentStudentID
+		if (currentStudentID.intValue() == 0) {//check CurrentStudentID 0 or not
 			CGUI.Refresh3();
 			CGUI.setState3(false);
 			CGUI.setState4(false);
@@ -51,7 +66,7 @@ public class cgCTL {
 		}
 
 		else {
-			IStudent s = StudentManager.get().getStudent(id);
+			IStudent s = StudentManager.get().getStudent(id); //get Student by ID
 
 			IStudentUnitRecord r = s.getUnitRecord(cuc);
 
@@ -65,7 +80,8 @@ public class cgCTL {
 		}
 	}
 
-	public String checkGrade(float f, float g, float h) {
+//Check the grade of the student	
+public String checkGrade(float f, float g, float h) {
 		IUnit u = UnitManager.UM().getUnit(cuc);
 		String s = u.getGrade(f, g, h);
 		CGUI.setState4(true);
@@ -82,7 +98,7 @@ public class cgCTL {
 		CGUI.setState5(true);
 		changed = true;
 	}
-
+//Save the student grades
 	public void saveGrade(float asg1, float asg2, float exam) {
 
 		IUnit u = UnitManager.UM().getUnit(cuc);
