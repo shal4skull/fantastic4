@@ -9,13 +9,14 @@
 
 package datamanagement;
 
+// This class implements IUnitLister interface
 public interface IUnitLister 
 {
-// This class implements IUnitLister interface
 
-    public void clearUnits();
     // This method clear all previous Units records
-    public void addUnit(IUnit unit);
+    public void clearUnits();
     // This method adds Units recods
+    public void addUnit(IUnit unit);
+    
 
 }

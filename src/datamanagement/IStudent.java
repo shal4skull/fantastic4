@@ -9,25 +9,26 @@
 
 package datamanagement;
 
+// This class implements IStudent interface
 public interface IStudent
 {
-// This class implements IStudent interface
 
-    public Integer getID();
     // This method returns student ID
-    public String getFirstName();
+    public Integer getID();
     // This method returns student first name
-    public void setFirstName(String firstName);
+    public String getFirstName();
     // This method sets student first name
-    public String getLastName();
+    public void setFirstName(String firstName);
     // This method returns student last name
-    public void setLastName(String lastName);
+    public String getLastName();
     // This method sets student last name
-    public void addUnitRecord( IStudentUnitRecord record );
+    public void setLastName(String lastName);
     // This method adds student records
+    public void addUnitRecord( IStudentUnitRecord record );
+    //This is an abstract method gets student records based on provided student id
     public IStudentUnitRecord getUnitRecord( String unitCode );
-    //This is an abstract method gets student records based on provided student id 
+    //This is an abstract method lists student records 
     public StudentUnitRecordList getUnitRecords();
-    //This is an abstract method lists student records
+    
 
 }

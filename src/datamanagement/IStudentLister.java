@@ -10,12 +10,13 @@
 
 package datamanagement;
 
+// This class implements IStudentLister interface
 public interface IStudentLister
 {
-// This class implements IStudentLister interface
 
-    public void clearStudents();
     // This method clear all previous student records
-    public void addStudent(IStudent student);
+    public void clearStudents();
     // This method adds student recods
+    public void addStudent(IStudent student);
+    
 }  

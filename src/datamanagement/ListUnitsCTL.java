@@ -9,12 +9,12 @@
 
 package datamanagement;
 
+// Creating a class as ListUnitCTL
 public class ListUnitsCTL 
 {
-// Creating a class as ListUnitCTL
 
-    private UnitManager um;
     //Declaring Unit Manager as um
+    private UnitManager um;
     public ListUnitsCTL() 
      {
        um = UnitManager.UM();

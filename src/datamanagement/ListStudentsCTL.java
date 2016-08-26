@@ -8,15 +8,15 @@
  */
 
 package datamanagement;
-        
+
+// Creating a class as ListStudentCTL        
 public class ListStudentsCTL
 {
-// Creating a class as ListStudentCTL
 
-  private StudentManager sm;
   //Declaring Student Manager as sm
-  public ListStudentsCTL() {sm = StudentManager.get();}
+  private StudentManager sm;
   //This method gives a list of students base on provide unit code
+  public ListStudentsCTL() {sm = StudentManager.get();}
   public void listStudents( IStudentLister lister, String unitCode ) 
   {
     lister.clearStudents();
