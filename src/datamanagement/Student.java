@@ -3,10 +3,10 @@
  * Author: Khue Dinh
  * Date: 17/8/2016
  * Version: 1.0
- * Moderator:
- * Reader:
+ * Moderator: Jayatunga siriwardana
+ * Reader: Shaluka Heshan samarakoon Epitagedara
  * Recorder:
- * Inspector:
+ * Inspector: Wing Kui Tsoi
  * 
  */
 
