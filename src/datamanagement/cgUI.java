@@ -1,3 +1,16 @@
+/*
+ 
+ * Author: jayatunga Siriwardana
+ * Date: 21/8/2016
+ * Version: 
+ * Moderator:
+ * Reader:
+ * Recorder:
+ * Inspector:
+ * 
+ */
+
+
 package datamanagement;
 import javax.swing.JLabel;
 import javax.swing.GroupLayout.Alignment;
