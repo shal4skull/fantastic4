@@ -1,22 +1,21 @@
-
 /*
  * Author: Shaluka Samarakoon
  * Date : 17/8/2016
  * Version : 1.0
- * Moderator :Wing Kui Tsoi
- * Reader :Khue Dinh
- * Inspector : Jayatunga siriwardana
+ * Moderator :
+ * Reader :
+ * Recorder :
+ * Inspector :
  */
 
 package datamanagement;
 
-// This class implements IStudentLister interface
 public interface IStudentLister
 {
+// This class implements IStudentLister interface
 
-    // This method clear all previous student records
     public void clearStudents();
-    // This method adds student recods
+    // This method clear all previous student records
     public void addStudent(IStudent student);
-    
+    // This method adds student recods
 }  

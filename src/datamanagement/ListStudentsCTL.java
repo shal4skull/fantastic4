@@ -2,20 +2,20 @@
  * Author: Shaluka Samarakoon
  * Date : 17/8/2016
  * Version : 1.0
- * Moderator :Wing Kui Tsoi
- * Reader :Khue Dinh
- * Inspector : Jayatunga siriwardana
+ * Moderator :
+ * Reader :
+ * Recorder :
+ * Inspector :
  */
 
 package datamanagement;
-
-// Creating a class as ListStudentCTL        
+        
 public class ListStudentsCTL
 {
+// Creating a class as ListStudentCTL
 
-  //Declaring Student Manager as sm
   private StudentManager sm;
-  //This method gives a list of students base on provide unit code
+  //Declaring Student Manager as sm
   public ListStudentsCTL() {sm = StudentManager.get();}
   public void listStudents( IStudentLister lister, String unitCode ) 
   {

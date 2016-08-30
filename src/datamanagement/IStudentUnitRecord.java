@@ -2,35 +2,35 @@
  * Author: Shaluka Samarakoon
  * Date : 17/8/2016
  * Version : 1.0
- * Moderator :Wing Kui Tsoi
- * Reader :Khue Dinh
- * Inspector : Jayatunga siriwardana
+ * Moderator :
+ * Reader :
+ * Recorder :
+ * Inspector :
  */
 
 package datamanagement;
 
-// This interface provides abstract methods for IStudentUnitRecord interface
 public interface IStudentUnitRecord 
 {
+// This class implements IStudentUnitRecord interface
 
-    // This method returns student ID
     public Integer getStudentID();
-    // This method returns Unit Code
+    // This method returns student ID
     public String getUnitCode();
-    // This method sets Asg1 marks
+    // This method returns Unit Code
     public void setAsg1(float mark);
-    // This method returns Asg1 marks
+    // This method sets Asg1 marks
     public float getAsg1();
-    // This method sets Asg2 marks
+    // This method returns Asg1 marks
     public void setAsg2(float mark);
-    // This method returns Asg2 marks
+    // This method sets Asg2 marks
     public float getAsg2();
-    // This method sets Exam marks
+    // This method returns Asg2 marks
     public void setExam(float mark);
-    // This method returns Exam marks
+    // This method sets Exam marks
     public float getExam();
-    // This method returns Total marks
+    // This method returns Exam marks
     public float getTotal();
-    
+    // This method returns Total marks
 
 }

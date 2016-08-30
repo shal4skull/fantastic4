@@ -2,57 +2,57 @@
  * Author: Shaluka Samarakoon
  * Date : 17/8/2016
  * Version : 1.0
- * Moderator :Wing Kui Tsoi
- * Reader :Khue Dinh
- * Inspector : Jayatunga siriwardana
+ * Moderator :
+ * Reader :
+ * Recorder :
+ * Inspector :
  */
 
 package datamanagement;
 
-// This class implements IUnit interface
 public interface IUnit 
 {
+// This class implements IUnit interface
 
-    // This method returns Unit Code
     public String getUnitCode();
-    // This method returns Unit Name
+    // This method returns Unit Code
     public String getUnitName();
-    // This method returns PsCutoff
+    // This method returns Unit Name
     public float getPsCutoff();
-    // This method sets PsCutoff1
+    // This method returns PsCutoff
     public void  setPsCutoff1(float cutoff);
-    // This method returns CrCutoff
+    // This method sets PsCutoff1
     public float getCrCutoff();
-    // This method sets CrCutoff1
+    // This method returns CrCutoff
     public void  setCrCutoff(float cutoff);
-    // This method returns DiCutoff
+    // This method sets CrCutoff1
     public float getDiCuttoff();
-    // This method sets DiCutoff1    
+    // This method returns DiCutoff    
     public void  setDiCutoff(float cutoff);
-    // This method returns HdCutoff
+    // This method sets DiCutoff1
     public float getHdCutoff();
-    // This method sets HdCutoff1   
+    // This method returns HdCutoff   
     public void  setHdCutoff(float cutoff);
-    // This method returns AeCutoff    
+    // This method sets HdCutoff1    
     public float getAeCutoff(); 
-    // This method sets AeCutoff1     
+    // This method returns AeCutoff     
     public void  setAeCutoff(float cutoff);
-    // This method returns Asg1 weight    
+    // This method sets AeCutoff1    
     public int getAsg1Weight();
-    // This method returns Asg2 weight
+    // This method returns Asg1 weight
     public int getAsg2Weight();
-    // This method returns Exam weight
+    // This method returns Asg2 weight
     public int getExamWeight();
-    // This method sets Assessment weights values
+    // This method returns Exam weight
     public void setAssessmentWeights(int asg1Wgt, int asg2Wgt, int examWgt);
-    // This method returns Grade from asg1,asg2 & exam marks
+    // This method sets Assessment weights values
     public String getGrade(float asg1, float asg2, float exam);
-    // This method adds student records
+    // This method returns Grade from asg1,asg2 & exam marks
     public void addStudentRecord(IStudentUnitRecord record );
-    //This is an abstract method gets student records based on provided student id
+    // This method adds student recods
     public IStudentUnitRecord getStudentRecord(int studentID ); 
-    //This is an abstract method lists student records   
+    //This method overrides getunitmethod in the istudentUnitRecord interface and returns IStudentUnitRecord   
     public StudentUnitRecordList listStudentRecords();
-   
+    //This methodreturns a list of IstudentUnitRecord
 
 }

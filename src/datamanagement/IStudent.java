@@ -2,33 +2,33 @@
  * Author: Shaluka Samarakoon
  * Date : 17/8/2016
  * Version : 1.0
- * Moderator :Wing Kui Tsoi
- * Reader :Khue Dinh
- * Inspector : Jayatunga siriwardana
+ * Moderator :
+ * Reader :
+ * Recorder :
+ * Inspector :
  */
 
 package datamanagement;
 
-// This class implements IStudent interface
 public interface IStudent
 {
+// This class implements IStudent interface
 
-    // This method returns student ID
     public Integer getID();
-    // This method returns student first name
+    // This method returns student ID
     public String getFirstName();
-    // This method sets student first name
+    // This method returns student first name
     public void setFirstName(String firstName);
-    // This method returns student last name
+    // This method sets student first name
     public String getLastName();
-    // This method sets student last name
+    // This method returns student last name
     public void setLastName(String lastName);
-    // This method adds student records
+    // This method sets student last name
     public void addUnitRecord( IStudentUnitRecord record );
-    //This is an abstract method gets student records based on provided student id
+    // This method adds student recods
     public IStudentUnitRecord getUnitRecord( String unitCode );
-    //This is an abstract method lists student records 
+    //This method overrides getunitmethod in the istudentUnitRecord interface and returns IStudentUnitRecord
     public StudentUnitRecordList getUnitRecords();
-    
+    //This methodreturns a list of IstudentUnitRecord
 
 }

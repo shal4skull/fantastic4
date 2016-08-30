@@ -2,21 +2,21 @@
  * Author: Shaluka Samarakoon
  * Date : 17/8/2016
  * Version : 1.0
- * Moderator :Wing Kui Tsoi
- * Reader :Khue Dinh
- * Inspector : Jayatunga siriwardana
+ * Moderator :
+ * Reader :
+ * Recorder :
+ * Inspector :
  */
 
 package datamanagement;
 
-// This class implements IUnitLister interface
 public interface IUnitLister 
 {
+// This class implements IUnitLister interface
 
-    // This method clear all previous Units records
     public void clearUnits();
-    // This method adds Units recods
+    // This method clear all previous Units records
     public void addUnit(IUnit unit);
-    
+    // This method adds Units recods
 
 }
